@@ -66,7 +66,7 @@ S3Targetbucket_node2 = glueContext.write_dynamic_frame.from_options(
     connection_type="s3",
     format="parquet",
     connection_options={
-        "path": "s3://vedant-de-on-youtube-cleaned-dev/Youtube/raw_statistics/",
+        "path": "s3://harshit-de-on-youtube-cleaned-dev/Youtube/raw_statistics/",
         "partitionKeys": ["region"],
     },
     format_options={"compression": "snappy"},
